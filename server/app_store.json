@@ -1,0 +1,134 @@
+{
+  "facts": [
+    {
+      "id": "default-1",
+      "statement": "Mumbai has a tropical coastal climate and does not get natural snow."
+    },
+    {
+      "id": "default-2",
+      "statement": "COVID-19 vaccines do not contain microchips or alter human DNA."
+    }
+  ],
+  "history": [
+    {
+      "id": "1795017109809",
+      "snippet": "Handwashing with soap removes bacteria and helps hospitals reduce patient infections.",
+      "fullText": "Handwashing with soap removes bacteria and helps hospitals reduce patient infections.",
+      "checkedAt": "03:51 PM",
+      "result": {
+        "verdict": "LIKELY_REAL",
+        "confidence": 97,
+        "headlineSummary": "The factual claims check out and support each other logically.",
+        "reasons": [
+          "3 of 3 factual claims match reliable evidence.",
+          "Claims connect smoothly with 2 supporting logical links."
+        ],
+        "claims": [
+          {
+            "id": "c1",
+            "symbol": "P1",
+            "shortLabel": "Soap removes bacteria",
+            "text": "Handwashing with soap removes bacteria from hands.",
+            "kind": "FACT",
+            "truth": "TRUE",
+            "explanation": "Soap breaks down oils and dirt on skin, allowing water to wash away bacteria."
+          },
+          {
+            "id": "c2",
+            "symbol": "P2",
+            "shortLabel": "Fewer bacteria, fewer infections",
+            "text": "Having fewer bacteria on hands reduces the chance of spreading germs to patients.",
+            "kind": "FACT",
+            "truth": "TRUE",
+            "explanation": "Medical studies consistently show that cleaner hands lower the transmission of harmful germs."
+          },
+          {
+            "id": "c3",
+            "symbol": "P3",
+            "shortLabel": "Hospitals reduce patient infections",
+            "text": "Handwashing with soap helps hospitals reduce patient infections.",
+            "kind": "FACT",
+            "truth": "TRUE",
+            "explanation": "Hospitals rely on regular handwashing as a proven way to keep patients safe from infections."
+          }
+        ],
+        "edges": [
+          {
+            "id": "e1",
+            "sourceId": "c1",
+            "targetId": "c2",
+            "relation": "SUPPORT",
+            "reason": "Removing bacteria with soap directly results in fewer germs on hands."
+          },
+          {
+            "id": "e2",
+            "sourceId": "c2",
+            "targetId": "c3",
+            "relation": "SUPPORT",
+            "reason": "Spreading fewer germs to patients helps hospitals lower their overall infection rates."
+          }
+        ],
+        "logicChecks": [
+          {
+            "id": "logic-true-c1",
+            "formula": "P1 = TRUE",
+            "ruleName": "Verified Premise",
+            "status": "PASSED",
+            "plainSummary": "\"Soap removes bacteria\" aligns with reliable evidence."
+          },
+          {
+            "id": "logic-true-c2",
+            "formula": "P2 = TRUE",
+            "ruleName": "Verified Premise",
+            "status": "PASSED",
+            "plainSummary": "\"Fewer bacteria, fewer infections\" aligns with reliable evidence."
+          },
+          {
+            "id": "logic-true-c3",
+            "formula": "P3 = TRUE",
+            "ruleName": "Verified Premise",
+            "status": "PASSED",
+            "plainSummary": "\"Hospitals reduce patient infections\" aligns with reliable evidence."
+          },
+          {
+            "id": "logic-support-e1",
+            "formula": "P1 → P2",
+            "ruleName": "Logical Support",
+            "status": "PASSED",
+            "plainSummary": "\"Soap removes bacteria\" logically supports \"Fewer bacteria, fewer infections\"."
+          },
+          {
+            "id": "logic-support-e2",
+            "formula": "P2 → P3",
+            "ruleName": "Logical Support",
+            "status": "PASSED",
+            "plainSummary": "\"Fewer bacteria, fewer infections\" logically supports \"Hospitals reduce patient infections\"."
+          }
+        ],
+        "stats": {
+          "totalClaims": 3,
+          "factCount": 3,
+          "opinionCount": 0,
+          "trueFactCount": 3,
+          "falseFactCount": 0,
+          "unverifiedFactCount": 0,
+          "supportEdges": 2,
+          "contradictEdges": 0,
+          "jumpEdges": 0,
+          "coherencePercent": 100
+        },
+        "sources": [],
+        "features": {
+          "trueFactRatio": 1,
+          "falseFactRatio": 0,
+          "unverifiedFactRatio": 0,
+          "supportEdgeRatio": 1,
+          "contradictEdgeRatio": 0,
+          "jumpEdgeRatio": 0,
+          "brokenChainRatio": 0,
+          "graphCohesion": 1
+        }
+      }
+    }
+  ]
+}

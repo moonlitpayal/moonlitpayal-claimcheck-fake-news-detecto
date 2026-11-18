@@ -1,0 +1,6 @@
+{
+  "name": "ClaimCheck",
+  "description": "Simple fake news detector using propositional logic and interactive claim-connection graphs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
